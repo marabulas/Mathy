@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/decoyStartView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <RelativeLayout
+        android:id="@+id/circleContainerLauncher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:physics="true"
+        app:gravityX="0"
+        app:gravityY="0.5"
+        app:bounds="true"
+        app:boundsSize="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blurViewGame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="200dp"
+                android:src="@drawable/icon" />
+
+            <com.mursaat.extendedtextview.AnimatedGradientTextView
+                android:id="@+id/animatedText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="SKETCHY"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:textSize="50sp"
+                app:angle="45"
+                app:colors="@array/funny_colors"
+                android:layout_gravity="center"
+                app:maxFPS="30"
+                app:simultaneousColors="4"
+                app:speed="1000" />
+
+            <TextView
+                android:id="@+id/playButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="85dp"
+                android:text="Touch anywhere to start"
+                android:textColor="#ABABAB"
+                android:textSize="25sp" />
+
+
+        </LinearLayout>
+
+
+    </eightbitlab.com.blurview.BlurView>
+
+    <TextView
+        android:id="@+id/paused_text"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="PAUSED"
+        android:elevation="10dp"
+        android:textColor="#EADD6B"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="50sp"
+        android:textAlignment="center"/>
+
+
+
+    <com.jawnnypoo.physicslayout.PhysicsRelativeLayout
+        android:id="@+id/circleContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:physics="true"
+        app:gravityX="0"
+        app:gravityY="5"
+        app:bounds="true"
+        app:boundsSize="15dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardBackgroundColor="#E4E4E4"
+        app:cardCornerRadius="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/decoy_circle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle_shape"
+            android:elevation="5dp"
+            android:scaleX="0"
+            android:scaleY="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.yangp.ypwaveview.YPWaveView
+            android:id="@+id/progress_bar"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:elevation="5dp"
+            android:scaleX="0"
+            android:scaleY="0"
+            app:animatorEnable="false"
+            app:behideColor="#77BAFF"
+
+            app:borderColor="#BB9613"
+            app:frontColor="#74E6CB"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:max="100"
+            app:progress="0"
+
+            app:shapeType="circle"
+            app:strong="100"
+            app:textColor="#2F3030"
+            app:textHidden="false" />
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-25dp"
+            android:background="@drawable/score_background"
+            android:paddingStart="5dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="5dp"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#FFB700"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/scoreTextView1"
+            app:layout_constraintStart_toStartOf="@id/scoreTextView1"
+            app:layout_constraintTop_toBottomOf="@id/scoreTextView1" />
+
+        <Button
+            android:id="@+id/scoreTextView1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/circle_shape"
+            android:onClick="abilityWindow"
+            android:padding="5dp"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:text="Ability"
+            android:textAlignment="center"
+            android:tooltipText="ability"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/progress_bar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/pause_button"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/circle_shape"
+            android:onClick="pause"
+            android:padding="5dp"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:text="II"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:tooltipText="pause"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/progress_bar"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/decoy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

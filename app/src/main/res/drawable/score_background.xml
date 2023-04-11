@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Rounded rectangle -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#848181"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+    <!-- Arc pointing upwards -->
+    <item android:top="-2dp" android:left="-20dp" android:right="-20dp">
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+            android:width="100dp"
+            android:height="50dp"
+            android:viewportWidth="100"
+            android:viewportHeight="60">
+            <path
+                android:fillColor="#848181"
+                android:pathData="M0,30 a50,50 0 0,1 50,-50 L100,0 L100,30 z" />
+        </vector>
+    </item>
+</layer-list>

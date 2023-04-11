@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    app:cardElevation="5dp"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/payne_gray_translucent"
+    app:cardCornerRadius="25dp">
+
+    <Button
+        android:id="@+id/abilities_dismiss"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:backgroundTint="?attr/colorPrimaryVariant"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="X" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:text="Abilities"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/spread"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:onClick="abilityClicked"
+                android:layout_margin="3dp"
+                android:contentDescription="@string/ability4_description"
+                android:src="@drawable/spread" />
+
+            <ImageButton
+                android:id="@+id/ability8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:onClick="abilityClicked"
+                android:background="#848588"
+                android:layout_margin="3dp"
+                android:contentDescription="@string/ability5_description"
+                 />
+
+            <ImageButton
+                android:id="@+id/destroy_danger"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:onClick="abilityClicked"
+                android:layout_margin="3dp"
+                android:contentDescription="@string/ability6_description"
+                android:src="@drawable/destroy_danger" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ability1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:onClick="abilityClicked"
+                android:background="#848588"
+                android:layout_margin="3dp"
+                android:contentDescription="@string/ability1_description"
+                 />
+
+            <ImageButton
+                android:id="@+id/multiplier"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:onClick="abilityClicked"
+                android:layout_margin="3dp"
+                android:contentDescription="@string/ability2_description"
+                android:src="@drawable/initial_ability" />
+
+            <ImageButton
+                android:id="@+id/ability3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:onClick="abilityClicked"
+                android:background="#848588"
+                android:layout_margin="3dp"
+                android:contentDescription="@string/ability3_description"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ability4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:scaleType="fitXY"
+                android:onClick="abilityClicked"
+                android:background="#848588"
+                android:layout_margin="3dp"
+                android:contentDescription="@string/ability4_description"
+                 />
+
+            <ImageButton
+                android:id="@+id/multiply"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:onClick="abilityClicked"
+                android:layout_margin="3dp"
+                android:contentDescription="@string/ability5_description"
+                android:src="@drawable/multiply" />
+
+            <ImageButton
+                android:id="@+id/ability6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:onClick="abilityClicked"
+                android:background="#848588"
+                android:layout_margin="3dp"
+                android:contentDescription="@string/ability6_description"
+                 />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/scoreAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bubbles: 500"
+            android:textAlignment="center"
+            android:textColor="#FFB700"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

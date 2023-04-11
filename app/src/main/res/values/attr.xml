@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="funny_colors">
+        <item>@color/materialRed</item>
+        <item>@color/colorAccent</item>
+        <item>@color/purple_500</item>
+        <item>@color/teal_200</item>
+    </array>
+</resources>

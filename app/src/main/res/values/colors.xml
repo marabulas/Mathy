@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="payne_gray">#555b6e</color>
+    <color name="payne_gray_translucent">#59555B6E</color>
+    <color name="cambridge_blue">#89b0ae</color>
+    <color name="mint_green">#bee3db</color>
+    <color name="seasalt">#faf9f9</color>
+    <color name="apricot">#ffd6ba</color>
+
+</resources>

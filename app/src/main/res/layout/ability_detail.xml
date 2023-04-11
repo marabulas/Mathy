@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="15dp"
+    android:layout_margin="15dp"
+    app:cardBackgroundColor="?attr/colorPrimary">
+
+    <Button
+        android:id="@+id/button_dismiss_ability_detail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="?attr/colorPrimaryVariant"
+        android:layout_gravity="end"
+        android:text="X" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/skull_icon_new" />
+
+        <TextView
+            android:id="@+id/ability_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="?attr/colorOnPrimary"
+            android:text="Ability Name"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/description_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="?attr/colorOnPrimary"
+            android:text="Description"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/ability_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="?attr/colorOnPrimary"
+            android:text="Cost"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="abilityUpgraded"
+            android:layout_margin="15dp"
+            android:backgroundTint="?attr/colorPrimaryVariant"
+            android:text="Upgrade level"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
