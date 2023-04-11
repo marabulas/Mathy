@@ -1,4 +1,4 @@
-package com.example.sketchy;
+package com.example.mathy;
 
 import android.graphics.drawable.Drawable;
 

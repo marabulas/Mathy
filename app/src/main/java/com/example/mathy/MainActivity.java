@@ -1,4 +1,4 @@
-package com.example.sketchy;
+package com.example.mathy;
 
 import static android.content.ContentValues.TAG;
 
@@ -36,6 +36,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.sketchy.R;
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
@@ -43,9 +44,6 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.FullScreenContentCallback;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.RequestConfiguration;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.jawnnypoo.physicslayout.PhysicsRelativeLayout;
@@ -317,9 +315,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }, 500);
 
-
-
-        showFullcScreenAd();
     }
 
     public void showFullcScreenAd() {

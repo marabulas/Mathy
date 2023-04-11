@@ -1,38 +1,26 @@
-package com.example.sketchy;
+package com.example.mathy;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.Path;
-import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.GradientDrawable;
-import android.os.AsyncTask;
-import android.os.Vibrator;
 import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AccelerateInterpolator;
-import android.view.animation.Animation;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import androidx.core.graphics.ColorUtils;
-
-import com.jawnnypoo.physicslayout.Physics;
-import com.jawnnypoo.physicslayout.PhysicsRelativeLayout;
+import com.example.sketchy.R;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.function.Consumer;
 
 public class CircleViewLauncher extends FrameLayout {
     int lifeTime;

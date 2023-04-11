@@ -49,7 +49,7 @@
                 android:id="@+id/animatedText"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:text="SKETCHY"
+                android:text="MATHY"
                 android:textAlignment="center"
                 android:layout_marginTop="15dp"
                 android:textSize="50sp"

@@ -11,10 +11,10 @@
         android:icon="@mipmap/app_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Sketchy"
+        android:theme="@style/Theme.Mathy"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.mathy.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LauncherActivity"
+            android:name="com.example.mathy.LauncherActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
